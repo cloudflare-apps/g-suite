@@ -1,0 +1,74 @@
+{
+  "resources": {
+    "body": [
+      {
+        "type": "style",
+        "src": "./source/app.css"
+      },
+      {
+        "type": "script",
+        "src": "./source/app.js"
+      }
+    ]
+  },
+  "preview": {
+    "handlers": [
+      {
+        "options": ["_default"],
+        "execute": "INSTALL_SCOPE.setOptions(INSTALL_OPTIONS)"
+      }
+    ]
+  },
+  "dns": [
+    {
+      "type": "MX",
+      "name": "@",
+      "content": "ASPMX.L.GOOGLE.COM",
+      "priority": 1
+    },
+    {
+      "type": "MX",
+      "name": "@",
+      "content": "ALT1.ASPMX.L.GOOGLE.COM",
+      "priority": 5
+    },
+    {
+      "type": "MX",
+      "name": "@",
+      "content": "ALT2.ASPMX.L.GOOGLE.COM",
+      "priority": 5
+    },
+    {
+      "type": "MX",
+      "name": "@",
+      "content": "ALT3.ASPMX.L.GOOGLE.COM",
+      "priority": 10
+    },
+    {
+      "type": "MX",
+      "name": "@",
+      "content": "ALT4.ASPMX.L.GOOGLE.COM",
+      "priority": 10
+    },
+    {
+      "type": "TXT",
+      "name": "@",
+      "content": "{{txt}}"
+    }
+  ],
+  "options": {
+    "properties": {
+      "txt": {
+        "title": "TXT record",
+        "type": "string",
+        "format": "input",
+        "description": "If you don't have a gsuite account, sign up here: https://gsuite.google.com/signup/basic/welcome. Gsuite will ask you to add a TXT record to verify you own the doman. Enter the value here.",
+        "placeholder": "google-site-verification=abcef35gfd0s9ds09",
+        "pattern": "^google-site-verification=[A-Za-z0-9]{5}-[A-Za-z0-9]{37}$",
+        "validationMessage": {
+          "202": "Please make sure the input starts with 'google-site-verification="
+        }
+      }
+    }
+  }
+}
