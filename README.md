@@ -1,17 +1,15 @@
-# Example App
-
-Download this app and replace our code any time you want to build an Cloudflare app.
-
-_Looking to use the latest JavaScript and CSS features? Check out our [Webpack example app](https://github.com/CloudflareApps/ExampleWebpackApp)!_
+# G Suite
 
 ## Setup
 
-Fork and clone the repo or <a href="https://github.com/CloudflareApps/ExampleApp/releases/latest" >download the latest release</a>.
+Fork and clone the repo or <a href="https://github.com/CloudflareApps/ExampleWebpackApp/releases/latest" >download the latest release</a>.
 
-Install the optional developer dependencies with `npm install`
+Install the dependencies with `npm install`
 
 ## Usage
 
+- `npm start` Watches for file changes and compile them.
+- `npm run build` Compiles your JavaScript and CSS once for release.
 - `npm run lint` Checks JavaScript formatting and attempts to fix any errors.
 
 ## Details
@@ -40,10 +38,10 @@ An directory for icons, tile images, and screenshots.
 
 - <a href="https://www.cloudflare.com/apps/developer/docs/getting-started">The Cloudflare developer documentation</a> for examples and API usage.
 
-<a href="https://www.cloudflare.com/apps/[[YOUR APP ALIAS]]/install?source=button">
+<a href="https://www.cloudflare.com/apps/g-suite/install?source=button">
   <img
-    src="https://install.cloudflareapps.com/install-button.png"
-    alt="Install [[YOUR APP NAME]] with Cloudflare"
+    src="https://install.cloudflareapps.com/g-suite.png"
+    alt="Install G Suite with Cloudflare"
     border="0"
     width="150">
 </a>
