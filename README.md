@@ -1,5 +1,7 @@
 # G Suite
 
+**This project is in active development and may change frequently.**
+
 ## Setup
 
 Fork and clone the repo or <a href="https://github.com/CloudflareApps/ExampleWebpackApp/releases/latest" >download the latest release</a>.
